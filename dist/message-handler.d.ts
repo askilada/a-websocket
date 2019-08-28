@@ -1,7 +1,7 @@
 import { ServerClient } from "./server-client";
 import * as WebSocket from "ws";
 import { Client } from "./client";
-declare type Handler<WS extends WebSocket, Data = any> = (client: ServerClient<WS> | Client<WS>, data?: Data) => void;
+export declare type Handler<WS extends WebSocket, Data = any> = (client: ServerClient<WS> | Client<WS>, data?: Data) => void;
 interface Handlers<T extends WebSocket, D> {
     [key: string]: Array<Handler<T, D>>;
 }
