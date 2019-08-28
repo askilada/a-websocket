@@ -1,0 +1,21 @@
+{
+  "name": "a-websocket",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "start": "tsc -w",
+    "test-server": "nodemon dist/test/server.test.js",
+    "test-client": "nodemon  dist/test/client.test.js"
+  },
+  "repository": "git@github.com:askilada/a-websocket.git",
+  "author": "Simon Jensen <pc.manden@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^7.1.2"
+  },
+  "devDependencies": {
+    "@types/ws": "^6.0.3",
+    "typescript": "^3.5.3"
+  }
+}
