@@ -27,7 +27,7 @@ export class MessageHandler<T extends WebSocket> {
 
     }
 
-    run = (op: number, action: string, client: ServerClient<T>|Client<T>, data?: any) => {
+    run = (op: number, action: string, client: ServerClient<T>, data?: any) => {
 
         const handlers = this.handlers[`${op}_${action}`]
 
