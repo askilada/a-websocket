@@ -23,7 +23,7 @@ class Client {
                 if ((jsonData.hasOwnProperty('op') && jsonData.hasOwnProperty('action')) == false) {
                     throw new Error("Missing op or action");
                 }
-                this.messageHandler.run(jsonData.op, jsonData.action, this, jsonData.data);
+                //this.messageHandler.run(jsonData.op, jsonData.action, this, jsonData.data)
             }
             catch (e) {
                 console.error(e);
